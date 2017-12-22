@@ -1,0 +1,25 @@
+{
+  "name": "wordpress-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ms747/wordpress-template.git"
+  },
+  "keywords": [
+    "wordpress"
+  ],
+  "author": "Mayur Shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ms747/wordpress-template/issues"
+  },
+  "homepage": "https://github.com/ms747/wordpress-template#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}
