@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ms747/wordpress-template#readme",
   "dependencies": {
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "font-awesome-animation": "^0.1.0"
   }
 }

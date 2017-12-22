@@ -5,6 +5,10 @@
     margin:0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Raleway', sans-serif;
     position: relative;
@@ -52,13 +56,15 @@ ul{
     margin:0;
     display:inline-block;
     padding:0 20px;
+    transition: all 0.5s;
+    font-weight: 700
 }
 
 .menu1 ul li{
     margin:0;
     display:inline-block;
     padding:0 20px;
-    transition: all 0.5s;
+    
     
 }
 
@@ -146,6 +152,18 @@ ul{
     width: 100%;
     height: 100vh;
     background: rgba(7, 72, 137, 0.3);
+}
+
+.more{
+    position: relative;
+    width: 100%;
+    top: 45vh;
+    font-size: 30px;
+}
+
+.more i:hover{
+    color:white;
+    cursor: pointer;
 }
 
 
