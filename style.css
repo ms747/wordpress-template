@@ -166,6 +166,10 @@ ul{
     cursor: pointer;
 }
 
+.hamburger-menu{
+    display: none;
+}
+
 
 .features{
     height: 100vh;
@@ -177,12 +181,39 @@ ul{
     }
 
     .menu1{
-        display: block;
+        display: grid;
+        grid-template-columns:20% auto;
         text-align: center;
+        
     }
 
     .menu{
-        display: block;
+        display: grid;
+        grid-template-columns:20% auto;
         text-align: center;
     }
+
+    .hamburger-menu{
+        cursor: pointer;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-left: 30px;
+        font-size: 30px; 
+    }
+
+    .menu1 .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 10%;
+    }
+
+    .menu .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 10%;
+    }
+
 }
