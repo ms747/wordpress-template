@@ -14,3 +14,4 @@ window.onscroll = () =>{
         menu.classList.add('menu1');
     }
 };
+
