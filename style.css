@@ -196,24 +196,40 @@ ul{
     .hamburger-menu{
         cursor: pointer;
         display: flex;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
-        padding-left: 30px;
         font-size: 30px; 
+    }
+.hamburger-menu-animation{
+        animation: fadeMenu 1s linear;
+    }
+
+    .hamburger-menu:hover{
+        color:whitesmoke;
     }
 
     .menu1 .logo{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-right: 10%;
+        padding-right: 20%;
     }
 
     .menu .logo{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-right: 10%;
+        padding-right: 20%;
+    }
+
+    @keyframes fadeMenu {
+        from{
+            transform: scale(1);
+        }
+
+        to{
+            transform: scale(1.2);
+        }
     }
 
 }
