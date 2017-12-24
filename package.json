@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./node_modules/live-server/live-server.js ./"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "animate.css": "^3.5.2",
     "font-awesome": "^4.7.0",
     "font-awesome-animation": "^0.1.0",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "live-server": "^1.2.0"
   }
 }
