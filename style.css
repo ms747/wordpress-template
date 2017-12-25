@@ -12,12 +12,41 @@ html{
 body{
     font-family: 'Raleway', sans-serif;
     position: relative;
+    transform: translateX(0);
+}
+
+.open-body {
+    animation: openmenu 0.2s forwards;
+}
+
+.close-body{
+    animation: closemenu 0.2s forwards;
+}
+
+@keyframes openmenu{
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(60%);
+    }
+}
+
+@keyframes closemenu{
+    0%{
+        transform: translateX(60%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
 }
 
 .menu{
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 100;
     background: black;
     color:white;
     display:grid;
@@ -29,7 +58,7 @@ body{
 .menu1{
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 100;
     background: rgba(0,0,0,0);
     color:black;
     display:grid;
@@ -99,7 +128,7 @@ ul{
 }
 
 .jumbotron button{
-    z-index: 1000;
+    z-index: 99;
     background: transparent;
     border-style: none;
     font-size: 1.2rem;
@@ -175,6 +204,10 @@ ul{
     height: 100vh;
 }
 
+.mobile-menu{
+    display: none;
+}
+
 @media only screen and (max-width: 722px) {
     .menu-items{
         display: none;
@@ -232,4 +265,48 @@ ul{
         }
     }
 
+
+    .mobile-menu {
+        font-family: 'Raleway', sans-serif;
+        display: block;
+        position: fixed;
+        height: 100vh;
+        width: 60%;
+        background: rgb(31, 31, 31);
+        z-index:101;
+        left:-60%;
+    }
+
+    .show-mobile-menu{
+        display: block;
+    }
+
+    .hide-mobile-menu{
+        display: none;
+    }
+    
+    .mymenu{
+        color:white;
+    }
+
+    .mymenu li{
+        cursor: pointer;
+        padding: 20px 0;
+    }
+
+    .mymenu li:hover{
+        background: gray;
+    }
+    
+    .back{
+        color:white;   
+        font-size: 30px;
+        padding-left: 10px; 
+        padding-top:10px;   
+    }
+
+    .close{
+        cursor: pointer;
+    }
 }
+
