@@ -31,5 +31,12 @@ $.fn.extend({
 
 $(".mobile-menu").append($(".menu-items").html());
 
+// Show Hamburger menu
+$(".hamburger-menu").click(function(){
+    $(".mobile-menu").addClass("show-mobile-menu");
+});
 
-
+// Hide Hamburger menu
+$(".close").click(function(){
+    $(".mobile-menu").removeClass("show-mobile-menu");
+});
