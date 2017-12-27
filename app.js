@@ -41,6 +41,7 @@ $(".hamburger-menu").click(function(){
 
 // Hide Hamburger menu
 $(".close").click(function(){
+    // Closing Animation
     mobileMenu.style.webkitAnimation = "hide-hamburger-menu 0.2s linear";
     setTimeout(()=>{
         $(".mobile-menu").removeClass("show-mobile-menu");
