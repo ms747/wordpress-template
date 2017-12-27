@@ -31,37 +31,5 @@ $.fn.extend({
 
 $(".mobile-menu").append($(".menu-items").html());
 
-$(".hamburger-menu").click(function(){
-    hamburgermenuOpenState = !hamburgermenuOpenState;
-    $(".hamburger-menu").animateCss('pulse');
-    if(hamburgermenuOpenState){    
-        body.style.webkitAnimation="openmenu 0.2s forwards";
-    }
-    else{
-        body.style.webkitAnimation="closemenu 0.2s forwards";
-    }
-    
-    //$(".mobile-menu").addClass("show-mobile-menu");
-});
-
-
-body.addEventListener('webkitAnimationEnd',function(){
-    body.style.webkitAnimationName = "";
-    if(hamburgermenuOpenState){
-        body.style.transform = "translateX(60%)"
-    }
-    else{
-        body.style.transform = "translateX(0)"
-    }
-});
-
-
-
-$(".close").click(function(){
-    $(".mobile-menu").removeClass("show-mobile-menu");
-});
-
-
-
 
 

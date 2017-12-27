@@ -5,42 +5,10 @@
     margin:0;
 }
 
-html{
-    scroll-behavior: smooth;
-}
 
 body{
     font-family: 'Raleway', sans-serif;
     position: relative;
-    transform: translateX(0);
-}
-
-.open-body {
-    animation: openmenu 0.2s forwards;
-}
-
-.close-body{
-    animation: closemenu 0.2s forwards;
-}
-
-@keyframes openmenu{
-    0%{
-        transform: translateX(0);
-    }
-
-    100%{
-        transform: translateX(60%);
-    }
-}
-
-@keyframes closemenu{
-    0%{
-        transform: translateX(60%);
-    }
-
-    100%{
-        transform: translateX(0);
-    }
 }
 
 .menu{
