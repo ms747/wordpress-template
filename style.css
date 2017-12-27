@@ -241,6 +241,8 @@ ul{
         width: 60%;
         background: rgb(31, 31, 31);
         z-index:101;
+        box-shadow: 10px 0 30px rgba(0, 0, 0, 0.63);
+        transform: translateX(0);
     }
 
     .show-mobile-menu{
@@ -250,6 +252,25 @@ ul{
     .hide-mobile-menu{
         display: none;
     }
+
+    @keyframes show-hamburger-menu{
+        0%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes hide-hamburger-menu{
+        0%{
+            transform: translateX(0%);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
+
     
     .mymenu{
         color:white;

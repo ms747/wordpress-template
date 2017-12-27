@@ -1,9 +1,10 @@
 console.log("js loaded");
 
 const menu = document.getElementById('menu');
-const hamburgermenu = document.getElementsByClassName('hamburger-menu');
+let hamburgermenu = document.querySelector('hamburger-menu');
 let hamburgermenuOpenState = false;
 let body = document.querySelector("body");
+let mobileMenu = document.querySelector(".mobile-menu");
 
 window.onscroll = () =>{
     if(window.pageYOffset > menu.offsetHeight){
@@ -34,9 +35,14 @@ $(".mobile-menu").append($(".menu-items").html());
 // Show Hamburger menu
 $(".hamburger-menu").click(function(){
     $(".mobile-menu").addClass("show-mobile-menu");
+    // Opening Animation
+    mobileMenu.style.webkitAnimation = "show-hamburger-menu 0.2s linear";
 });
 
 // Hide Hamburger menu
 $(".close").click(function(){
-    $(".mobile-menu").removeClass("show-mobile-menu");
+    mobileMenu.style.webkitAnimation = "hide-hamburger-menu 0.2s linear";
+    setTimeout(()=>{
+        $(".mobile-menu").removeClass("show-mobile-menu");
+    },200);
 });
