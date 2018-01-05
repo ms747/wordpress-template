@@ -93,6 +93,7 @@ ul{
     height: 100vh;
     background: url('./img/back.jpeg');
     background-size: cover;
+	background-position:center;
 }
 
 .jumbotron button{
